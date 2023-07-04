@@ -1,6 +1,6 @@
 const http = require('http');
 
-const serverIP = '127.0.0.1';
+const hostname = '127.0.0.1';
 const port = 1245;
 
 const app = http.createServer((req, res) => {
@@ -9,6 +9,6 @@ const app = http.createServer((req, res) => {
   res.end('Hello Holberton School!');
 });
 
-app.listen(port, serverIP);
+app.listen(port, hostname);
 
 module.exports = app;
